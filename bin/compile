@@ -39,6 +39,8 @@ ENV_DIR=$3
 # Export Path variables, for use in sub-scripts.
 export BUILD_DIR CACHE_DIR ENV_DIR
 
+export LIBPL="/app/.scalingo/python/lib/python3.9/config-3.9-x86_64-linux-gnu/python3.9.a"
+
 # Set the base URL for downloading buildpack assets like Python runtimes.
 # The user can provide BUILDPACK_S3_BASE_URL to specify a custom target.
 # Note: this is designed for non-Heroku use, as it does not use the user-provided
